@@ -10,6 +10,12 @@ class TestAddition(unittest.TestCase):
             addition(-1, 5)
         print("Test case 1 passed \n")
         
+     def test_case2(self):
+        print("Running test case 2: adding 3 and 5")
+        result = addition(3, 5)
+        self.assertEqual(result, 8)
+        print("Test case 2 passed \n")
+        
         
         
         

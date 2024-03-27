@@ -16,7 +16,17 @@ class TestAddition(unittest.TestCase):
         self.assertEqual(result, 8)
         print("Test case 2 passed \n")
         
+     def test_case3(self):
+         
+        print("Running test case 3: adding 1 and '5'")
         
+        try:
+            addition(1, '15')
+        except ValueError as e:
+            
+            print("Expected error message:", e)
+            
+        print("Test case 3 passed")
         
         
 if __name__ == '__main__':
